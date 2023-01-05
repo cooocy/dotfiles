@@ -1,0 +1,15 @@
+[user]
+    name = cooocy
+    email = cooocy@foxmail.com
+[core]
+    editor = vim
+[push]
+    default = simple
+[pull]
+    rebase = true
+[diff]
+    tool = vimdiff
+[init]
+    defaultBranch = main
+[alias]
+    graph = log --graph --oneline --decorate
