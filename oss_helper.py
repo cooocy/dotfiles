@@ -2,6 +2,8 @@ import oss2
 import sys
 import time
 
+from pathlib import Path
+
 
 def now():
     return time.strftime("%Y%m%d%H%M%S", time.localtime())
@@ -24,8 +26,11 @@ if args_len < 3:
     print('args error')
     sys.exit(1)
 
-auth = oss2.Auth('access-key', 'access-secret')
-bucket = oss2.Bucket(auth, 'endpoint', 'bucket-name')
+f = open(str(Path.home()) + "/.dotfiles/oss_config.txt")
+oss_configs = f.read().splitlines()
+f.close()
+auth = oss2.Auth(oss_configs[0], oss_configs[1])
+bucket = oss2.Bucket(auth, oss_configs[2], oss_configs[3])
 
 action = args[1]
 
