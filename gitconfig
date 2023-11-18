@@ -1,15 +1,26 @@
-[user]
-    name = cooocy
-    email = cooocy@foxmail.com
+[alias]
+    graph = log --graph --oneline --decorate
 [core]
     editor = vim
-[push]
-    default = simple
-[pull]
-    rebase = true
+    pager = delta
+[delta]
+    line-numbers = true
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    navigate = true    # use n and N to move between diff sections
+    # side-by-side = true
 [diff]
+    colorMoved = default
     tool = vimdiff
 [init]
     defaultBranch = main
-[alias]
-    graph = log --graph --oneline --decorate
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictstyle = diff3
+[pull]
+    rebase = true
+[push]
+    default = simple
+[user]
+    name = cooocy
+    email = cooocy@foxmail.com

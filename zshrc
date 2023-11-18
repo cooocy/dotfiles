@@ -15,9 +15,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="apple"
+ZSH_THEME="half-life"
+# ZSH_THEME="kolo"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -54,4 +54,4 @@ export BAT_THEME="1337"
 source $HOME/.dotfiles/zshrc_private
 source $HOME/.dotfiles/zshrc_workspace
 
-quote | cowsay
+neofetch
