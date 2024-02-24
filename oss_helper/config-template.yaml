@@ -1,0 +1,8 @@
+oss:
+  access_key_id: x
+  access_key_secret: x
+  endpoint: oss-cn-shanghai.aliyuncs.com
+  bucket_name: x
+
+log:
+  path: log

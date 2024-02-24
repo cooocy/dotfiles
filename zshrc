@@ -42,8 +42,7 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # alias
 # ossp and ossd are the python scripts to put and delete files in ALiYun OSS.
-alias ossp="python3 $HOME/.dotfiles/oss_helper.py put"
-alias ossd="python3 $HOME/.dotfiles/oss_helper.py del"
+alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
 
 alias kc="kubectl"
 

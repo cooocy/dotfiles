@@ -1,3 +1,8 @@
 zshrc_private
 zshrc_workspace
 oss_config.txt
+oss_helper/config.yaml
+oss_helper/log
+.DS_Store
+.idea
+__pycache__

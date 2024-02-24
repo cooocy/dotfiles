@@ -2,7 +2,7 @@
     graph = log --graph --oneline --decorate
 [core]
     editor = vim
-    pager = delta
+    # pager = delta
 [delta]
     line-numbers = true
     light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
