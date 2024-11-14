@@ -10,13 +10,13 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 16,
         // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily: '"AurulentSansM Nerd Font Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
         fontWeightBold: 'bold',
         // line height as a relative unit
-        lineHeight: 1.4,
+        lineHeight: 1.3,
         // letter spacing as a relative unit
         letterSpacing: 0,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
@@ -26,7 +26,7 @@ module.exports = {
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'UNDERLINE',
         // set to `true` (without backticks and without quotes) for blinking cursor
-        cursorBlink: false,
+        cursorBlink: true,
         // color of the text
         foregroundColor: '#fff',
         // terminal background color
@@ -137,7 +137,10 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hyper-material-theme"],
+    plugins: [
+        "hyper-material-theme",
+        "hyperpower"
+    ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
@@ -145,6 +148,6 @@ module.exports = {
     keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-    },
+    }
 };
 //# sourceMappingURL=config-default.js.map

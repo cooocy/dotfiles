@@ -16,8 +16,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="half-life"
-# ZSH_THEME="kolo"
+# ZSH_THEME="half-life"
+ZSH_THEME="pygmalion"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -45,6 +45,9 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
 
 alias kc="kubectl"
+alias ls="lsd"
+alias ll="lsd -l"
+
 
 # bat
 export BAT_THEME="1337"
