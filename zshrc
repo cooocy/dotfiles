@@ -47,7 +47,7 @@ alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
 alias kc="kubectl"
 alias ls="lsd"
 alias ll="lsd -l"
-
+alias mac="macchina"
 
 # bat
 export BAT_THEME="1337"
