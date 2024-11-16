@@ -22,3 +22,6 @@ ln -sf ~/.dotfiles/lsd               ~/.config/lsd
 
 rm -rf ~/.config/neofetch
 ln -sf ~/.dotfiles/neofetch          ~/.config/neofetch
+
+rm -rf ~/.config/bat
+ln -sf ~/.dotfiles/bat               ~/.config/bat

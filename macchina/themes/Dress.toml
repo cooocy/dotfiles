@@ -1,0 +1,62 @@
+# https://github.com/Macchina-CLI/macchina/blob/main/doc/macchina.7.scd
+
+spacing            = 4
+padding            = 0
+hide_ascii         = false
+prefer_small_ascii = false
+separator          = "➞"
+key_color          = "#6BD7F9"
+# key_color          = "#EBDBB2"
+separator_color    = "Yellow"
+
+[palette]
+type    = "Full"
+glyph   = "████▓▓"
+visible = true
+
+[bar]
+glyph           = "ߋ"
+symbol_open     = '['
+symbol_close    = ']'
+visible         = true
+hide_delimiters = false
+
+[box]
+title           = " ❄️❄️❄️This is Marika ❄️❄️❄️"
+border          = "plain"
+visible         = true
+
+[box.inner_margin]
+x               = 2
+y               = 1
+
+[custom_ascii]
+color           = "#DDDDDD"
+# path            = "~/.config/macchina/ascii/apple.ascii"
+
+[randomize]
+key_color       = false
+separator_color = false
+# pool            = ""
+
+[keys]
+host            = "🎎User/Hostname"
+kernel          = "© Kernel"
+battery         = "🔋Battery"
+os              = "© OS"
+de              = "© Desktop Environment"
+wm              = "© Window Manager"
+distro          = "© Distribution"
+terminal        = "© Terminal"
+shell           = "© Shell"
+packages        = "📦Packages"
+uptime          = "⏱️Uptime"
+memory          = "✅Memory"
+machine         = "💻Machine"
+local_ip        = "🌐Local IP"
+backlight       = "🔅Brightness"
+resolution      = "🖥️Resolution"
+cpu_load        = "CPU Load"
+cpu             = "✅CPU"
+gpu             = "✅GPU"
+disk_space      = "✅Disk"

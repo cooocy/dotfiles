@@ -8,6 +8,10 @@ My MacOS dotfiles.
 - vimrc
 - gitconfig
 - hyper.js
+- bat
+- lsd
+- macchina
+- neofetch
 
 ## Setup
 

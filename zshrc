@@ -24,7 +24,7 @@ ZSH_THEME="pygmalion"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  # git
   gitignore
   git-open
   hitokoto
@@ -41,16 +41,20 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️ zsh 
 
 # alias
-# ossp and ossd are the python scripts to put and delete files in ALiYun OSS.
+alias dof="cd ~/.dotfiles"
+
 alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
 
 alias kc="kubectl"
 alias ls="lsd"
 alias ll="lsd -l"
+# Only list files.
+alias lf="lsd --directory-only (.*|*)(^/)"
+# Only list visiable files.
+alias lfv="lsd --directory-only *(^/)"
+# Only list hidden files.
+alias lfh="lsd --directory-only .*(^/)"
 alias mac="macchina"
-
-# bat
-export BAT_THEME="1337"
 
 # Source others if exist.
 source $HOME/.dotfiles/zshrc_private
