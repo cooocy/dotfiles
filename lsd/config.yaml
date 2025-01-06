@@ -16,6 +16,7 @@ blocks:
   - date
   - size
   - name
+  - git
 
 # == Color ==
 # This has various color options. (Will be expanded in the future.)

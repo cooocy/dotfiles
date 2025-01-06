@@ -33,6 +33,7 @@ plugins=(
   z
   zsh-autosuggestions
   zsh-syntax-highlighting
+  copypath
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -44,6 +45,7 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias dof="cd ~/.dotfiles"
 
 alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
+alias fia="python $HOME/workspace/fia/fia.py"
 
 alias kc="kubectl"
 alias ls="lsd"
