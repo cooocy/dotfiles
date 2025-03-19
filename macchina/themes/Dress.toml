@@ -11,7 +11,7 @@ separator_color    = "Yellow"
 
 [palette]
 type    = "Full"
-glyph   = "████▓▓"
+glyph   = "██▓▓"
 visible = true
 
 [bar]

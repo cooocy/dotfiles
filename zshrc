@@ -57,6 +57,7 @@ alias lfv="lsd --directory-only *(^/)"
 # Only list hidden files.
 alias lfh="lsd --directory-only .*(^/)"
 alias mac="macchina"
+alias st="open -a 'Sublime Text'"
 
 # Source others if exist.
 source $HOME/.dotfiles/zshrc_private
