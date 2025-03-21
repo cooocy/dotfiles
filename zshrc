@@ -48,16 +48,23 @@ alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
 alias fia="python $HOME/workspace/fia/fia.py"
 
 alias kc="kubectl"
+
 alias ls="lsd"
 alias ll="lsd -l"
 # Only list files.
-alias lf="lsd --directory-only (.*|*)(^/)"
+alias lsf="lsd --directory-only (.*|*)(^/)"
+alias llf="lsd --directory-only (.*|*)(^/) -l"
+
 # Only list visiable files.
-alias lfv="lsd --directory-only *(^/)"
+# alias lfv="lsd --directory-only *(^/)"
+
 # Only list hidden files.
-alias lfh="lsd --directory-only .*(^/)"
+# alias lsfh="lsd --directory-only .*(^/)"
+# alias llfh="lsd --directory-only .*(^/) -l"
+
 alias mac="macchina"
 alias st="open -a 'Sublime Text'"
+alias idea="open -a 'IntelliJ IDEA Ultimate'"
 
 # Source others if exist.
 source $HOME/.dotfiles/zshrc_private
