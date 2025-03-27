@@ -1,0 +1,13 @@
+venv
+.idea
+*.iws
+*.iml
+*.ipr
+.vscode
+.DS_Store
+/http-requests
+/http-request
+/logs
+*.log
+__pycache__/
+config/app_private.yaml

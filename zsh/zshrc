@@ -25,7 +25,6 @@ ZSH_THEME="pygmalion"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   # git
-  gitignore
   git-open
   hitokoto
   rand-quote
@@ -45,7 +44,7 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias dof="cd ~/.dotfiles"
 
 alias ossh="python $HOME/.dotfiles/oss_helper/oss_helper.py"
-alias fia="python $HOME/workspace/fia/fia.py"
+alias fia="python $HOME/kits/fia/fia.py"
 
 alias kc="kubectl"
 
@@ -61,6 +60,8 @@ alias llf="lsd --directory-only (.*|*)(^/) -l"
 # Only list hidden files.
 # alias lsfh="lsd --directory-only .*(^/)"
 # alias llfh="lsd --directory-only .*(^/) -l"
+
+alias gitig="sh $HOME/.dotfiles/git/generate_ignore.sh"
 
 alias mac="macchina"
 alias st="open -a 'Sublime Text'"
