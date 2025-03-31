@@ -67,8 +67,10 @@ alias mac="macchina"
 alias st="open -a 'Sublime Text'"
 alias idea="open -a 'IntelliJ IDEA Ultimate'"
 
+export TLDR_AUTO_UPDATE_DISABLED=true
+
 # Source others if exist.
-source $HOME/.dotfiles/zshrc_private
-source $HOME/.dotfiles/zshrc_workspace
+source $HOME/.dotfiles/zsh/zshrc_private
+source $HOME/.dotfiles/zsh/zshrc_workspace
 
 neofetch

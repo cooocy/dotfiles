@@ -12,6 +12,7 @@ My MacOS dotfiles.
 - lsd
 - macchina
 - neofetch
+- fish
 
 ## Setup
 

@@ -35,6 +35,9 @@ ln -sf ~/.dotfiles/hyper/hyper.js    ~/.hyper.js
 rm -rf ~/.config/macchina
 ln -sf ~/.dotfiles/macchina          ~/.config/macchina
 
+rm -rf ~/.config/fish
+ln -sf ~/.dotfiles/fish              ~/.config/fish
+
 rm -rf ~/.config/lsd
 ln -sf ~/.dotfiles/lsd               ~/.config/lsd
 

@@ -6,3 +6,4 @@ oss_helper/log
 .DS_Store
 .idea
 __pycache__
+private.fish
