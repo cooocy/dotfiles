@@ -129,6 +129,10 @@ module.exports = {
         screenReaderMode: false,
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
+        modifierKeys: {
+            // Can use the [option] key
+            altIsMeta: true,
+        },
         // for advanced config flags please refer to https://hyper.is/#cfg
     },
     // a list of plugins to fetch and install from npm

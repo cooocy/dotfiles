@@ -12,6 +12,11 @@
 #git clone --depth=1 https://github.com/paulirish/git-open.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/git-open
 
 
+# ---------------------- fish ----------------------
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jethrokuan/z
+fisher install patrickf1/fzf.fish
+
 
 # --------------------- install some kits ---------------------
 kits_home="$HOME/kits"
