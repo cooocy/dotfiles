@@ -27,7 +27,27 @@ end
 # end
 
 function gitig
-    sh $HOME/.dotfiles/git/generate_ignore.sh
+    sh $HOME/.dotfiles/git/generate_ignore.sh $argv
+end
+
+function gitop --description 'Open the remote origin in the browser'
+    set -l remote (git remote get-url origin)
+    if test $status -ne 0
+        # Not a git repository
+        return
+    end
+    # -r: regex; -q: quiet, otherwise fish will print the result
+    if string match -rq "^git" $remote
+        # git@github.com:cooocy/attre.git >> https://github.com/cooocy/attre
+        set remote (string replace ':' '/' $remote)
+        set remote (string replace 'git@' 'https://' $remote)
+        set remote (string replace '.git' '' $remote)
+    end
+    if string match -rq "^http" $remote
+        # https://github.com/cooocy/attre.git >> https://github.com/cooocy/attre
+        set remote (string replace '.git' '' $remote)
+    end
+    open $remote
 end
 
 function mac
