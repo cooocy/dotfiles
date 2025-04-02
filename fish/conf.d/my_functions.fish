@@ -41,3 +41,7 @@ end
 function idea
     open -a 'IntelliJ IDEA Ultimate' $argv
 end
+
+function pycharm
+    open -a 'PyCharm Professional Edition' $argv
+end
