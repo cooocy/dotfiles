@@ -10,6 +10,10 @@ function fia
     python $HOME/kits/fia/fia.py $argv
 end
 
+function lk
+    python $HOME/kits/leyndell-knight/leyndell_knight.py $argv
+end
+
 function ls
     lsd $argv
 end
