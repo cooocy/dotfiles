@@ -3,7 +3,7 @@ function dof
 end
 
 function ossh
-    python $HOME/.dotfiles/oss_helper/oss_helper.py $argv
+    python $HOME/kits/leyndell-knight/leyndell_knight.py oss $argv
 end
 
 function fia

@@ -134,6 +134,7 @@ module.exports = {
             altIsMeta: true,
         },
         // for advanced config flags please refer to https://hyper.is/#cfg
+        // windowSize: [800, 600],
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
