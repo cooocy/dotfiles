@@ -22,6 +22,10 @@ function ll
     lsd -l $argv
 end
 
+function kc
+    kubectl $argv
+end
+
 # function lsf
     # lsd --directory-only (.*|*)(^/)
 # end
@@ -29,10 +33,6 @@ end
 # function llf
     # lsd --directory-only (.*|*)(^/) -l
 # end
-
-function gitig
-    sh $HOME/.dotfiles/git/generate_ignore.sh $argv
-end
 
 function gitop --description 'Open the remote origin in the browser'
     set -l remote (git remote get-url origin)
@@ -69,3 +69,4 @@ end
 function pycharm
     open -a 'PyCharm Professional Edition' $argv
 end
+
