@@ -62,6 +62,10 @@ function st
     open -a 'Sublime Text' $argv
 end
 
+function tp
+    open -a 'Typora' $argv
+end
+
 function idea
     open -a 'IntelliJ IDEA Ultimate' $argv
 end
