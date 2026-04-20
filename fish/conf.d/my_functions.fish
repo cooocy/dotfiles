@@ -67,10 +67,10 @@ function tp
 end
 
 function idea
-    open -a 'IntelliJ IDEA Ultimate' $argv
+    open -a 'IntelliJ IDEA' $argv
 end
 
 function pycharm
-    open -a 'PyCharm Professional Edition' $argv
+    open -a 'PyCharm Professional' $argv
 end
 
