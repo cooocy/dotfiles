@@ -24,3 +24,5 @@
 [user]
     name = cooocy
     email = cooocy@foxmail.com
+[color "branch"]
+	upstream = white
