@@ -35,6 +35,7 @@ ln -sf ~/.dotfiles/vim/vimrc         ~/.vimrc
 ln -sf ~/.dotfiles/git/gitconfig     ~/.gitconfig
 ln -sf ~/.dotfiles/zsh/zshrc         ~/.zshrc
 ln -sf ~/.dotfiles/hyper/hyper.js    ~/.hyper.js
+ln -sf ~/.dotfiles/ghostty/config.ghostty    ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 
 # Although -f is used, recursion will still occur if the target(~/.config/macchina) exists.
 rm -rf ~/.config/macchina
@@ -51,3 +52,5 @@ ln -sf ~/.dotfiles/neofetch          ~/.config/neofetch
 
 rm -rf ~/.config/bat
 ln -sf ~/.dotfiles/bat               ~/.config/bat
+
+

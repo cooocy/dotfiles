@@ -1,0 +1,22 @@
+# macos-titlebar-style = hidden
+theme = "Aurora"
+background-opacity = 0.96
+
+adjust-cell-height = 10%
+
+# font-family = "JetBrainsMono Nerd Font"
+font-size = 17
+# line-height = 1.1
+# cell-width = 1.0
+
+macos-option-as-alt = true
+# macos-cmd-as-meta   = false
+
+# 禁用会干扰 vim 的默认快捷键
+keybind = alt+a=ignore
+keybind = alt+i=ignore
+keybind = ctrl+a=ignore
+
+# 自动为 SSH 连接传输 Ghostty terminfo
+shell-integration-features = ssh-terminfo
+
