@@ -14,26 +14,6 @@ function lk
     python $HOME/kits/leyndell-knight/leyndell_knight.py $argv
 end
 
-function ls
-    lsd $argv
-end
-
-function ll
-    lsd -l $argv
-end
-
-function kc
-    kubectl $argv
-end
-
-# function lsf
-    # lsd --directory-only (.*|*)(^/)
-# end
-
-# function llf
-    # lsd --directory-only (.*|*)(^/) -l
-# end
-
 function gitop --description 'Open the remote origin in the browser'
     set -l remote (git remote get-url origin)
     if test $status -ne 0
@@ -52,26 +32,6 @@ function gitop --description 'Open the remote origin in the browser'
         set remote (string replace '.git' '' $remote)
     end
     open $remote
-end
-
-function mac
-    macchina $argv
-end
-
-function st
-    open -a 'Sublime Text' $argv
-end
-
-function tp
-    open -a 'Typora' $argv
-end
-
-function idea
-    open -a 'IntelliJ IDEA' $argv
-end
-
-function pycharm
-    open -a 'PyCharm Professional' $argv
 end
 
 # cc — 在 claude-code 工作区里启动 claude, 临时挂代理

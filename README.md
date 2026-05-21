@@ -13,6 +13,7 @@ My MacOS dotfiles.
 - macchina
 - neofetch
 - fish
+- ghostty
 
 ## Setup
 
@@ -20,5 +21,6 @@ My MacOS dotfiles.
 cd ~
 git clone --depth=1 git@github.com:cooocy/dotfiles.git .dotfiles
 cd .dotfiles
+./brew_install.sh
 ./setup.sh
 ```
