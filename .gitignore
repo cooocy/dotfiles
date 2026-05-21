@@ -8,3 +8,13 @@ oss_helper/log
 __pycache__
 private.fish
 work.fish
+
+# fish
+fish_variables                            # 本机 universal 变量快照
+functions/fisher.fish                     # fisher 自己(让 install 命令重装)
+completions/fisher.fish                   # fisher 的补全
+functions/__z.fish                        # 插件
+functions/__z_add.fish                    # 插件
+functions/__z_clean.fish                  # 插件
+functions/__z_complete.fish               # 插件
+conf.d/z.fish                             # 插件
