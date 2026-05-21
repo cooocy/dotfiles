@@ -13,6 +13,7 @@ set -U fish_user_paths ~/.local/bin $fish_user_paths
 
 # ====================================================== claude
 
+set -U fish_user_paths /opt/homebrew/opt/node@24/bin $fish_user_paths
 
 # ====================================================== ghostty
 
