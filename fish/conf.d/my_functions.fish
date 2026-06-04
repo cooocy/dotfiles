@@ -1,17 +1,13 @@
-function dof
-    cd ~/.dotfiles
-end
-
 function ossh
     python $HOME/kits/leyndell-knight/leyndell_knight.py oss $argv
 end
 
 function fia
-    python $HOME/kits/fia/fia.py $argv
+    $HOME/kits/fia/.venv/bin/python $HOME/kits/fia/fia.py $argv
 end
 
 function lk
-    python $HOME/kits/leyndell-knight/leyndell_knight.py $argv
+    $HOME/kits/leyndell-knight/.venv/bin/python $HOME/kits/leyndell-knight/leyndell_knight.py $argv
 end
 
 function gitop --description 'Open the remote origin in the browser'
