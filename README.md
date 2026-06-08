@@ -14,6 +14,7 @@ My MacOS dotfiles.
 - neofetch
 - fish
 - ghostty
+- zed
 
 ## Setup
 

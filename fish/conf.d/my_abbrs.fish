@@ -14,6 +14,7 @@ abbr -a st      'open -a "Sublime Text"'
 abbr -a tp      'open -a Typora'
 abbr -a idea    'open -a "IntelliJ IDEA"'
 abbr -a pycharm 'open -a "PyCharm Professional"'
+abbr -a zed 'open -a "Zed"'
 
 abbr -a dof 'cd ~/.dotfiles'
-abbr -a dofv 'open -a "Sublime Text" ~/.dotfiles'
+abbr -a dofv 'open -a "Zed" ~/.dotfiles'

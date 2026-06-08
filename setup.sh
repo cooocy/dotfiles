@@ -24,6 +24,8 @@ ln -sf ~/.dotfiles/neofetch          ~/.config/neofetch
 rm -rf ~/.config/bat
 ln -sf ~/.dotfiles/bat               ~/.config/bat
 
+ln -sf ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
+
 
 # ---------------------- zsh ----------------------
 # install oh-my-zsh
