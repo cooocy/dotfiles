@@ -8,3 +8,4 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 # update and install using homebrew
 brew update
 brew install htop jq tree cowsay k9s telnet tldr bottom lsd fd macchina neofetch zoxide
+brew install --cask font-jetbrains-mono-nerd-font

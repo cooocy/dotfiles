@@ -29,3 +29,4 @@ set -x LS_COLORS 'di=38;5;74'
 set -x GOPATH /opt/go
 fish_add_path $GOPATH/bin
 # ====================================================== go
+

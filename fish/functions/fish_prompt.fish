@@ -28,7 +28,7 @@ function fish_prompt --description 'Write out the prompt'
 
     set -l vcs_length (string length $new_fish_vcs_prompt)
     if test $new_fish_vcs_prompt
-        echo -s (prompt_login) ' 🍏 ' $cwd_color (prompt_pwd) $vcs_color ' ⤊ ' $new_fish_vcs_prompt ' ' $prompt_status
+        echo -s (prompt_login) ' 🍏 ' $cwd_color (prompt_pwd) $vcs_color '   ' $new_fish_vcs_prompt ' ' $prompt_status
     else
         echo -s (prompt_login) ' 🍏 ' $cwd_color (prompt_pwd) ' ' $prompt_status
     end

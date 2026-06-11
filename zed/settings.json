@@ -92,4 +92,6 @@
     "folds": true,
     "min_line_number_digits": 4,
   },
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_fallbacks": ["Symbols Nerd Font Mono"]
 }

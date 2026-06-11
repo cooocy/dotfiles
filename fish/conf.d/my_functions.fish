@@ -9,7 +9,7 @@ function lk
     $MINE_TOOLS/leyndell-knight/.venv/bin/python $MINE_TOOLS/leyndell-knight/leyndell_knight.py $argv
 end
 
-function token_usage
+function token-usage
     $MINE_TOOLS/leyndell-grace/.venv/bin/python $MINE_TOOLS/leyndell-grace/token_usage.py $argv
 end
 
