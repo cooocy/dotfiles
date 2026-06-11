@@ -1,16 +1,20 @@
-function ossh
-    python $HOME/kits/leyndell-knight/leyndell_knight.py oss $argv
-end
+# 个人 tools 入口
+set -x MINE_TOOLS $HOME/firelink
 
 function fia
-    $HOME/kits/fia/.venv/bin/python $HOME/kits/fia/fia.py $argv
+    $MINE_TOOLS/fia/.venv/bin/python $MINE_TOOLS/fia/fia.py $argv
 end
 
 function lk
-    $HOME/kits/leyndell-knight/.venv/bin/python $HOME/kits/leyndell-knight/leyndell_knight.py $argv
+    $MINE_TOOLS/leyndell-knight/.venv/bin/python $MINE_TOOLS/leyndell-knight/leyndell_knight.py $argv
 end
 
-function gitop --description 'Open the remote origin in the browser'
+function token_usage
+    $MINE_TOOLS/leyndell-grace/.venv/bin/python $MINE_TOOLS/leyndell-grace/token_usage.py $argv
+end
+
+function gitremote --description 'Open the remote origin in the browser' --argument-names browser
+    # Usage: gitremote [chrome|opera|safari|browser app name]
     set -l remote (git remote get-url origin)
     if test $status -ne 0
         # Not a git repository
@@ -27,7 +31,19 @@ function gitop --description 'Open the remote origin in the browser'
         # https://github.com/cooocy/attre.git >> https://github.com/cooocy/attre
         set remote (string replace '.git' '' $remote)
     end
-    open $remote
+    if test -n "$browser"
+        switch $browser
+            case chrome
+                set browser 'Google Chrome'
+            case opera
+                set browser 'Opera Air'
+            case safari
+                set browser Safari
+        end
+        open -a "$browser" $remote
+    else
+        open $remote
+    end
 end
 
 # cc — 在 claude-code 工作区里启动 claude, 临时挂代理
