@@ -1,4 +1,9 @@
 {
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "One Dark"
+  },
   "$schema": "zed://schemas/settings",
   "diagnostics": {
     "button": false,
@@ -38,7 +43,7 @@
   "ensure_final_newline_on_save": false,
   "use_on_type_format": false,
   "linked_edits": false,
-  "autosave": "off",
+  "autosave": "on_focus_change",
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false,
@@ -93,5 +98,6 @@
     "min_line_number_digits": 4,
   },
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-  "buffer_font_fallbacks": ["Symbols Nerd Font Mono"]
+  "buffer_font_fallbacks": ["Symbols Nerd Font Mono"],
+  "vim_mode": false
 }
