@@ -1,5 +1,9 @@
 # macos-titlebar-style = hidden
+
 theme = "Aurora"
+# Aurora 主题的默认文字是明黄色, 覆盖一下
+foreground = "#ffd34d"
+
 background-opacity = 0.96
 
 adjust-cell-height = 10%
@@ -20,3 +24,11 @@ keybind = ctrl+a=ignore
 # 自动为 SSH 连接传输 Ghostty terminfo
 shell-integration-features = ssh-terminfo
 
+# macos-icon = blueprint
+# macos-icon = chalkboard
+# macos-icon = microchip
+# macos-icon = glass
+# macos-icon = holographic
+# macos-icon = paper
+# macos-icon = retro
+macos-icon = xray

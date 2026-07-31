@@ -1,4 +1,7 @@
 {
+  "outline_panel": {
+    "button": false
+  },
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
@@ -52,7 +55,8 @@
     "code_actions": false,
   },
   "terminal": {
-    "button": false,
+    "dock": "left",
+    "button": true,
     "toolbar": {
       "breadcrumbs": false,
     },
@@ -99,5 +103,6 @@
   },
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_fallbacks": ["Symbols Nerd Font Mono"],
-  "vim_mode": false
+  "vim_mode": false,
+  "ui_font_size": 18
 }
