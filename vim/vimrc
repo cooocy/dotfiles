@@ -14,6 +14,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 let skip_defaults_vim=1
 
 syntax on
+filetype plugin indent on
 
 set number
 
@@ -24,3 +25,7 @@ set autoindent
 set ts=4
 
 set hlsearch
+
+" 性能优化
+set synmaxcol=200      " 每行最多扫描前 200 列做语法高亮
+set lazyredraw

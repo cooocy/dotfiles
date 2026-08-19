@@ -50,3 +50,97 @@ function gitremote --description 'Open the remote origin in the browser' --argum
         open $remote
     end
 end
+
+function happ-on --description "开启 Happ 系统代理"
+    set -l proxy_host 127.0.0.1
+    set -l proxy_port 10809
+    set -l services "Wi-Fi"
+
+    # 确认 Happ 的 HTTP 代理已启动
+    if not nc -z $proxy_host $proxy_port >/dev/null 2>&1
+        echo "❌ Happ 未监听 $proxy_host:$proxy_port"
+        echo "请先在 Happ 中启动 Proxy 模式。"
+        return 1
+    end
+
+    sudo -v
+    or return 1
+
+    set -l existing_services \
+        (networksetup -listallnetworkservices \
+        | string match -rv '^An asterisk' \
+        | string replace -r '^\*' '')
+
+    for service in $services
+        if not contains -- $service $existing_services
+            echo "⚠️ 网络服务不存在，已跳过：$service"
+            continue
+        end
+
+        echo "→ 开启 $service 的 HTTP/HTTPS 代理"
+
+        sudo networksetup -setwebproxy \
+            "$service" $proxy_host $proxy_port
+
+        sudo networksetup -setsecurewebproxy \
+            "$service" $proxy_host $proxy_port
+
+        sudo networksetup -setwebproxystate \
+            "$service" on
+
+        sudo networksetup -setsecurewebproxystate \
+            "$service" on
+    end
+
+    echo
+    echo "✅ Happ 系统代理已开启：$proxy_host:$proxy_port"
+    scutil --proxy
+end
+
+function happ-off --description "关闭 Happ 系统代理"
+    set -l services "Wi-Fi"
+
+    sudo -v
+    or return 1
+
+    set -l existing_services \
+        (networksetup -listallnetworkservices \
+        | string match -rv '^An asterisk' \
+        | string replace -r '^\*' '')
+
+    for service in $services
+        if not contains -- $service $existing_services
+            echo "⚠️ 网络服务不存在，已跳过：$service"
+            continue
+        end
+
+        echo "→ 关闭 $service 的系统代理"
+
+        sudo networksetup -setwebproxystate \
+            "$service" off
+
+        sudo networksetup -setsecurewebproxystate \
+            "$service" off
+
+        sudo networksetup -setsocksfirewallproxystate \
+            "$service" off
+    end
+
+    echo
+    echo "✅ 系统代理已关闭"
+    scutil --proxy
+end
+
+function happ-env --description "为当前 Fish 会话启用 Happ HTTP 代理"
+    set -l proxy_url http://127.0.0.1:10809
+
+    set -gx http_proxy  $proxy_url
+    set -gx https_proxy $proxy_url
+    set -gx HTTP_PROXY  $http_proxy
+    set -gx HTTPS_PROXY $https_proxy
+
+    set -gx no_proxy localhost,127.0.0.1,::1
+    set -gx NO_PROXY $no_proxy
+
+    echo "✅ 当前 Fish 已启用代理：$proxy_url"
+end

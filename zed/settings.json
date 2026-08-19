@@ -1,11 +1,31 @@
 {
+  "proxy": "",
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false
+  },
+  "tabs": {
+    "file_icons": false,
+    "git_status": false
+  },
+  "title_bar": {
+    "show_branch_status_icon": false
+  },
+  "status_bar": {
+    "show_active_file": false,
+    "line_endings_button": false
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "outline_panel": {
     "button": false
   },
   "theme": {
-    "mode": "system",
-    "light": "Ayu Light",
-    "dark": "One Dark"
+    "mode": "light",
+    "light": "macOS Classic Light",
+    "dark": "Everforest Dark Soft"
   },
   "$schema": "zed://schemas/settings",
   "diagnostics": {
@@ -55,7 +75,7 @@
     "code_actions": false,
   },
   "terminal": {
-    "dock": "left",
+    "dock": "bottom",
     "button": true,
     "toolbar": {
       "breadcrumbs": false,
@@ -104,5 +124,6 @@
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_fallbacks": ["Symbols Nerd Font Mono"],
   "vim_mode": false,
-  "ui_font_size": 18
+  "ui_font_size": 18,
+  "markdown_preview_theme": "macOS Classic Light" 
 }

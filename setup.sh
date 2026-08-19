@@ -9,6 +9,10 @@ ln -sf ~/.dotfiles/hyper/hyper.js    ~/.hyper.js
 ln -sf ~/.dotfiles/ghostty/config.ghostty    ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 
 # Although -f is used, recursion will still occur if the target(~/.config/macchina) exists.
+
+rm -rf ~/.vim
+ln -sf ~/.dotfiles/vim/.vim          ~/.vim
+ 
 rm -rf ~/.config/macchina
 ln -sf ~/.dotfiles/macchina          ~/.config/macchina
 
@@ -39,19 +43,4 @@ ln -sf ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
 
 # ---------------------- fish ----------------------
 # 安装 fisher, fisher 是 fish 的插件管理器
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-
-
-
-# --------------------- install some kits ---------------------
-kits_home="$HOME/kits"
-
-if [ ! -d "$kits_home" ]; then
-    mkdir -p "$kits_home"
-fi
-git clone --depth=1 git@github.com:cooocy/fia.git $kits_home/fia
-
-
-
-
-
+# curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
